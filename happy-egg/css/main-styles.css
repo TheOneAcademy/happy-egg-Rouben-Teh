@@ -1,0 +1,164 @@
+/* general setting*/
+@font-face {
+    font-family: 'fontello';
+    /* .. means go back front file */
+    src: url('../font/fontello.eot?53361347');
+    src: url('../font/fontello.eot?53361347#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?53361347') format('woff2'),
+         url('../font/fontello.woff?53361347') format('woff'),
+         url('../font/fontello.ttf?53361347') format('truetype'),
+         url('../font/fontello.svg?53361347#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: #f6f0e8;
+}
+
+/* Nav */
+.logo img{
+    width:12vw;
+}
+
+.find-eggs {
+    height: 44px;
+    background: orange;
+}
+
+.find-eggs-text {
+    font-family: 'Open Sans', sans-serif;
+
+    /* to make content vertically center, must apply to column */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.find-eggs i {
+    font-family: "fontello";
+    font-style: normal;
+    margin-right: 10px;
+}
+
+/* banner */
+.banner {
+    /* background-color: red; */
+    /* image 1, image 2, image 3 */
+    background-image: url(../images/header-bg-1.svg), url(../images/header-bg-2.jpg);
+    
+    background-repeat: no-repeat, no-repeat;
+    
+    /* 1st number = width, 2nd number = height */
+    background-size: 100% auto, auto 100%;
+
+    /*1st number = x pos, 2nd number = y pos */
+    background-position: -135px -5px, center center;
+
+    /* shortcut way to incert bg color n image. but only limited to 1 image */
+    /* background: red url() */
+}
+
+.banner-text {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h1 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 24vw;
+    line-height: 1em;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: orange;
+}
+
+.banner-text h3{
+    font-size: 4.5vw;
+    font-weight: 700;
+    width: 60vw;
+    color: #244f48;
+}
+
+.banner-text img {
+    width: 50%;
+    margin: 10px 0 15px 0;
+}
+
+/* recipe */
+.recipe {
+    background-color: orange;
+}
+
+figure{
+    position: relative;
+}
+
+figure img {
+    border-radius: 20px;
+}
+
+figure span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%);
+
+    font-family: 'Boogaloo', cursive;
+    font-size: 7vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: -1px;
+
+    align-items: flex-end;
+}
+
+/* welcome */
+.welcome {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vw;
+    background: url(../images/welcome-bg.png) left 2px / 100% auto no-repeat;
+}
+
+.backgroundimg img{
+    position: absolute;
+}
+
+.backgroundh2 h2{
+    position: relative;
+}
+
+h2{
+    top: 18px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 13vw;
+    text-transform: uppercase;
+    color: orange;
+}
+
+/* Sign Up */
+::placeholder {
+    color: orange;
+}
+
+input{
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 12px 20px;
+    border: 1px solid #61c8d7;
+    color: #fcaf47;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    width:120px;
+    background-color: #61c8d7;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
