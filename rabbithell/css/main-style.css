@@ -1,0 +1,16 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: geometricPrecision;
+}
+
+.highlight{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.right-col{
+    font-size: 5vw;
+    color: grey;
+    justify-content: center;
+    flex-direction: column;
+}
